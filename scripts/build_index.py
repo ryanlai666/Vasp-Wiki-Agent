@@ -109,8 +109,7 @@ def main():
         num_documents = build_index()
         print(f"\n✓ Success! Indexed {num_documents} document chunks")
         print("\nYou can now start the backend server:")
-        print("  cd backend")
-        print("  uvicorn main:app --reload")
+        print("  uvicorn backend.main:app --reload")
     except Exception as e:
         logger.error(f"Error building index: {e}")
         raise

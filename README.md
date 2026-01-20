@@ -4,11 +4,18 @@ A fullstack RAG (Retrieval-Augmented Generation) agent for querying the VASP Wik
 
 ## Features
 
-- Scrapes and indexes the VASP Wiki documentation
-- Semantic search using FAISS vector store
-- Query interface with Gemini 2.5 Flash API
-- React frontend with citation support
-- FastAPI backend
+### Backend
+- **Wiki Scraper & Processor**: Automatically crawls and indexes documentation from the VASP Wiki, handling HTML cleaning and content structuring.
+- **RAG Pipeline**: Implements a robust Retrieval-Augmented Generation flow using custom chunking strategies.
+- **Semantic Search**: Powered by FAISS (Facebook AI Similarity Search) for fast and accurate document retrieval.
+- **Gemini Integration**: Leverages Google's Gemini 2.5 Flash API for advanced natural language reasoning and synthesis.
+- **FastAPI Framework**: High-performance RESTful API with asynchronous support for efficient query handling.
+
+### Frontend
+- **React + Vite**: A modern, fast, and responsive user interface.
+- **Interactive Query Interface**: Clean search experience for asking complex VASP-related questions.
+- **Smart Citations**: Automatically attributes information to original VASP Wiki pages, providing direct links for verification.
+- **Rich Text Rendering**: Full support for Markdown and code blocks to display technical documentation clearly.
 
 ## Setup
 
@@ -62,8 +69,7 @@ python scripts/build_index.py
 ### 5. Start Backend Server
 
 ```bash
-cd backend
-uvicorn main:app --reload --host localhost --port 8000
+uvicorn backend.main:app --reload --host localhost --port 8000
 ```
 
 ### 6. Start Frontend (in another terminal)

@@ -1,5 +1,4 @@
 """Configuration management for the VASP Wiki RAG Agent."""
-import os
 from pathlib import Path
 from pydantic_settings import BaseSettings
 from typing import Optional

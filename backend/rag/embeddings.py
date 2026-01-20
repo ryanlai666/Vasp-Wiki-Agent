@@ -27,7 +27,7 @@ class EmbeddingGenerator:
         
         # Use config setting if not explicitly provided
         if use_gemini is None:
-            use_gemini = getattr(settings, 'use_gemini_embeddings', True)
+            use_gemini = getattr(settings, 'use_gemini_embeddings', False)
         self.use_gemini = use_gemini
         self.gemini_client = None
         self.fallback_model = None
