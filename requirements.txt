@@ -1,0 +1,35 @@
+# Backend Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Gemini API
+google-generativeai==0.3.2
+
+# Vector Store
+faiss-cpu==1.7.4
+
+# Web Scraping
+beautifulsoup4==4.12.2
+lxml==4.9.3
+html2text==2020.1.16
+
+# HTTP Clients
+requests==2.31.0
+aiohttp==3.9.1
+
+# Environment & Configuration
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Numerical Operations
+numpy==1.24.3
+
+# Embeddings (alternative if Gemini embeddings not available)
+sentence-transformers>=2.3.0
+
+# Text Processing
+tiktoken==0.5.2
+
+# Logging
+loguru==0.7.2
