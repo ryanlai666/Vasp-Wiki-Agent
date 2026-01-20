@@ -2,6 +2,10 @@
 
 A fullstack RAG (Retrieval-Augmented Generation) agent for querying the VASP Wiki using Google's Gemini 2.5 Flash API.
 
+## Demo
+
+![Application Demo](./Application_Demo_frontend.gif)
+
 ## Features
 
 ### Backend
